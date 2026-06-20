@@ -1,3 +1,25 @@
+/*
+** 2026-06-20
+**
+** In place of a legal notice, here is a blessing:
+**
+**    May you do good and not evil.
+**    May you find forgiveness for yourself and forgive others.
+**    May you share freely, never taking more than you give.
+**
+*************************************************************************
+** This file act as an behavior pack registrar and importar of several
+** other modules used by specifying it on the 'dependencies' section.
+*/
+
+/*
+**
+** Honors
+**
+*************************************************************************
+** daniswastaken
+*/
+
 {
 	"format_version": 2,
 	"metadata": {
@@ -22,6 +44,13 @@
 	},
 	"modules": [
 		{
+			"type": "script",
+			"language": "javascript",
+			"entry": "scripts/main.js",
+			"uuid": "93fbcb5b-789c-44b9-af12-07ab765faad9",
+			"version": [1, 0, 0]
+		},
+		{
 			"type": "data",
 			"uuid": "a7dab0d7-9290-4bcd-851c-2f7bb093c591",
 			"version": [
@@ -32,6 +61,14 @@
 		}
 	],
 	"dependencies": [
+		{
+			"module_name": "@minecraft/server",
+			"version": "2.8.0"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "2.0.0"
+		},
 		{
 			"uuid": "24fd072d-5072-498d-ba11-89feb7d5775c",
 			"version": [
